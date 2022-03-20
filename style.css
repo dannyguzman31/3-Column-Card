@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  border-radius: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 20px 20px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3.5rem;
+  height: 500px;
+  width: 300px;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 15px 0 0 15px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 15px 15px 0;
+}
+
+.container .img {
+  margin-top: -2rem;
+}
+
+.container .title {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.container .paragraph {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  margin-bottom: 5rem;
+  letter-spacing: 0.8px;
+}
+
+.container .btn {
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  border-radius: 100px;
+  padding: 15px 35px;
+  margin: 5px;
+  font-size: 14px;
+  /* color: hsl(0, 0%, 95%); */
+}
+
+/* Buttons */
+.btn_sedan {
+  color: hsl(31, 77%, 52%);
+  font-weight: 600;
+}
+
+.btn_suv {
+  color: hsl(184, 100%, 22%);
+  font-weight: 600;
+}
+
+.btn_luxury {
+  color: hsl(179, 100%, 13%);
+  font-weight: 600;
+}
+
+.btn:active,
+.btn:hover {
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
+/* Mobile */
+
+/* @media screen and (min-width: 375px) {
+  body {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+  }
+} */
